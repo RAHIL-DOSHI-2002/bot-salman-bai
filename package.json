@@ -9,6 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord-player": "^4.0.7",
+    "discord-ytdl-core": "^5.0.3",
+    "discord.js": "^12.5.3",
+    "ffmpeg-static": "^4.3.0",
+    "soundcloud-scraper": "^5.0.0",
+    "spotify-url-info": "^2.2.0",
+    "youtube-sr": "^4.0.7",
+    "ytdl-core": "^4.7.0"
   }
 }

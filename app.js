@@ -1,29 +1,29 @@
 const Discord = require("discord.js");
 const{prefix,token}=require("./config.json");
 const client= new Discord.Client();
-
+                
 
 client.once("ready",()=>{
-    console.log("ready apde")
+    console.log("i am online")
    
 })
 
 client.on("message",message=>{
-  if(message.content.startsWith(prefix)){
+  {
 
- if(message.content === "-swear"){
-  const gali = ["pagal","haramkhor","salla","pucker","bitch"];
-const randomNumber= Math.floor( Math.random() * 5);
-const randomGali=gali[randomNumber];
-  message.channel.send(randomGali)
-  console.log(randomNumber);
-}
-
-
+ //if(message.content === "-swear"){
+//  const gali = ["pagal","haramkhor","salla","pucker","bitch""kutte"];
+//const randomNumber= Math.floor( Math.random() * 5);
+//const randomGali=gali[randomNumber];
+ // message.channel.send(randomGali)
+ // console.log(randomNumber);
+//}
 
 
 
-   else if(message.member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS','CHANGE_NICKNAME'])){
+
+
+   if(message.member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS','CHANGE_NICKNAME'])){
 
 
 
@@ -33,7 +33,7 @@ const randomGali=gali[randomNumber];
   var member= message.mentions.members.first();
    
   member.kick().then((member) =>{ 
-    message.channel.send("chala ja bsdk ")
+    message.channel.send( "chala ja bsdk ")
     
  })
 }
@@ -44,7 +44,7 @@ const randomGali=gali[randomNumber];
    var member= message.mentions.members.first();
    
     member.ban().then((member) =>{ 
-      message.channel.send("mar gaya madarchod ")
+      message.channel.send("bannned")
 
 
 
@@ -59,21 +59,21 @@ else {
   
 }
 
+if(message.content ==="noob"){
+const gali = ["tera baap"]
+message.channel.send( gali)
+
+
+}
+
 
 
   }
  })
 
-// client.on("message",message=>{
-//   if(message.content === "-swear"){
-//   const gali = ["chu***a","haramkhor","salla","prathan","bitch"];
-// const randomNumber= Math.floor( Math.random() * 4);
-// const randomGali=gali[randomNumber];
-//   message.channel.send(randomGali)
-//   console.log(randomNumber);
-// }
-// })
 
 
 
-client.login(token);
+
+
+client.login(token)
